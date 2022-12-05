@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <audio id="audio1" style="display: none;"><source src="/audio/silence.mp3" type="audio/mp3"></audio>
+    <div class="containerr">
+        <form>
+          <div class="formulario form-step-active" style="padding-bottom:20px;">
+            <span><h2>Dê o primeiro passo<br> para o sucesso.</h2></span><br>
+            <span><h2>Podemos começar?</h2></span>
+          </div>
+          <div class="formulario">
+            <!-- <label for="email">E-mail</label><br>
+             <input type="email" placeholder="exemplo@mail.com" id="email"><br>-->
+            <span><h2>Bem-Vindo</h2></span><br>
+             <label for="empresa">Nome da empresa/negócio</label><br>
+             <input type="text" placeholder="Ex: Gazeta de Minas" id="empresa"><br>
+             <label for="nome">Nome</label><br>
+             <input type="text" placeholder="Nome Completo" id="nome"><br>
+             <label for="phone">Telefone</label><br>
+             <input type="text" placeholder="(XX) XXXXX-XXXX" id="phone" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" ><br> 
+           </div>  
+           <div class="formulario">
+            <Label><h4>Quais as modalidades de propaganda te interessam mais?</h4></Label><br><br>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Banner oficial no site da Gazeta de minas" id="opt-1" name="modalidade">
+              <label class="form-check-label" for="opt-1">
+                Banner oficial no site da Gazeta de minas
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Publicidade nos grupos de Notícias" id="opt-2" name="modalidade">
+              <label class="form-check-label" for="opt-2">
+                Publicidade nos grupos de Notícias
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Publicidade e apoio no Instagram " id="opt-3" name="modalidade">
+              <label class="form-check-label" for="opt-3">
+                Publicidade e apoio no Instagram 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Apoio às matérias jornalísticas e no giro de notícias diário" id="opt-4" name="modalidade">
+              <label class="form-check-label" for="opt-4">
+                Apoio às matérias jornalísticas e no giro de notícias diário
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Quadros de Entretenimento" id="opt-5" name="modalidade">
+              <label class="form-check-label" for="opt-5">
+                Quadros de Entretenimento
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="Eventos da cidade e transmissões ao vivo" id="opt-6" name="modalidade">
+              <label class="form-check-label" for="opt-6">
+                Eventos da cidade e transmissões ao vivo
+              </label>
+            </div>
+          </div><br>
+          <div class="formulario">
+            <label for="titleservice">Para quantas pessoas você espera exibir sua marca?</label><br>
+          <input type="text" id="visibilidade" placeholder="Ex: De 200 a 20.000">
+          </div>
+          <div class="formulario">
+            <label for="preco">Qual o seu orçamento para investir em publicidade na Gazeta?</label><br>
+            <input type="text" id="preco" placeholder="Ex: R$150,00" class="custom4"><br>
+          </div>
+            
+
+      <div id="progress-bar">
+    <span class="step active"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+      </div>  </form>
+      <div class="botoes">
+      <button id="progress-prev" class="btn" style="visibility: hidden;" >Voltar</button>
+      <button id="progress-next" class="btn">Próximo</button>
+      <input type="button" value="Enviar" id="button" class="btn">
+      </div>
+      
+    </div>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="https://plentz.github.io/jquery-maskmoney/javascripts/jquery.maskMoney.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+</html>
