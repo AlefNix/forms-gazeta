@@ -2,7 +2,7 @@
 //Enviar formulário por email
 
 (function(){
-      emailjs.init("");
+      emailjs.init("ql3TzoPbGvSASIf5k");
 })();
 
 function enviaEmail(event){
@@ -30,7 +30,7 @@ function enviaEmail(event){
         visibilidade:visibilidade,
     }
 
-    emailjs.send("","", templateParams)
+    emailjs.send("service_mxtwbyd","template_w0ei3ix", templateParams)
         .then(function(response) {
            console.log('SUCCESS!', response.status, response.text);
         }, function(error) {
