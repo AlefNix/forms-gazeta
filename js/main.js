@@ -5,9 +5,8 @@
       emailjs.init("ql3TzoPbGvSASIf5k");
 })();
 
-function enviaEmail(event){
+function enviaEmail(){
 
-    event.preventDefault();
     let arr = [];
     $.each($("input[name='modalidade']:checked"), function(){
     arr.push($(this).val());
@@ -132,12 +131,13 @@ decimal:','
 
 //formulário---
 
-document.getElementById("button").addEventListener('click', ()=>{
+document.getElementById("button").addEventListener('click', (e)=>{
+  e.preventDefault();
   let fullName = document.getElementById('nome').value;
-    let phone = document.getElementById("phone").value;
-    let empresa = document.getElementById("empresa").value;
-    let preco = document.getElementById("preco").value;
-    let visibilidade =  document.getElementById('visibilidade').value;
+  let phone = document.getElementById("phone").value;
+  let empresa = document.getElementById("empresa").value;
+  let preco = document.getElementById("preco").value;
+  let visibilidade =  document.getElementById('visibilidade').value;
 
   if( fullName == ""){
     return false
