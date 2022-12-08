@@ -139,19 +139,25 @@ document.getElementById("button").addEventListener('click', (e)=>{
   let preco = document.getElementById("preco").value;
   let visibilidade =  document.getElementById('visibilidade').value;
 
+  let alerta = "Ops, tem algo faltando!";
   if( fullName == ""){
-    return false
+    alert(alerta);
+    return false;
   }
   if( phone == ""){
+    alert(alerta);
     return false
   }
   if( empresa == ""){
+    alert(alerta);
     return false
   }
   if( preco == ""){
+    alert(alerta);
     return false
   }
   if( visibilidade == ""){
+    alert(alerta);
     return false
   }
   return (enviaEmail());
